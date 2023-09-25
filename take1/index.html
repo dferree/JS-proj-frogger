@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frogger</title>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- editor section -->
+    <div class="editor container">
+      <h1>Choose your icons</h1>
+      <form action="">
+        <fieldset>
+          <legend>Choose your character</legend>
+          <div class="radiobox">
+            <input type="radio" id="froggie" name="character" value="froggie"> <img src="/media/frog-classic-2.png" alt="">
+            <br>
+            <input type="radio" id="monopoly" name="character" value="monopoly"> <img src="/media/monopoly-man1.png" alt="">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose the 1st obstacle</legend>
+          <div class="radiobox">
+            <input style="align-self: center;" type="radio" name="obstacle1" id="car" value="car"> <img src="/media/cars-1.png" alt="cars"> <img src="/media/road.png" alt="road">
+            <br>
+            <input type="radio" name="obstacle1" id="jail" value="jail"> <img src="/media/jail.png" alt="cars"> <img src="/media/mono-go.png" alt="road">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose the 2nd obstacle</legend>
+          <div class="radiobox">
+            <input type="radio" name="obstacle2" id="log" value="log"> <img src="/media/log.png" alt=""> <img src="/media/river.png" alt="">
+            <br>
+          </div>
+        </fieldset>
+        <input type="button" value="Submit" id="submit-btn">
+      </form>
+    </div>
+
+    <!-- frogger section -->
+    <div class="frogger container">
+      <button id="button">Start/Pause</button>
+      <input type="button" value="Refresh Page" onClick="location.href=location.href">
+      <h3> Seconds left: <span id="time-left"> 20 </span> </h3>
+      <h3 id="result"></h3>
+
+      <div class="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="ending-block"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-left l5"></div>
+        <div class="log-left l1"></div>
+        <div class="log-left l2"></div>
+        <div class="log-left l3"></div>
+        <div class="log-left l4"></div>
+        <div class="log-right l5"></div>
+        <div class="log-right l1"> </div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div class="log-right l4"></div>
+        <div class="log-right l5"></div>
+        <div class="log-right l1"></div>
+        <div class="log-right l2"></div>
+        <div class="log-right l3"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+        <div class="car-left c1"></div>
+        <div class="car-left c2"></div>
+        <div class="car-left c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div class="car-right c1"></div>
+        <div class="car-right c2"></div>
+        <div class="car-right c3"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="starting-block"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

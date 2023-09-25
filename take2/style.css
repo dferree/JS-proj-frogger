@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+
+.editor{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.frogger{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  height: 270px;
+  width: 270px;
+}
+
+.grid div{
+  height: 30px;
+  width: 30px;
+}
+
+.ending-block{
+  background-color: red;
+
+}
+
+.starting-block {
+  background-color: blue;
+}
+
+.c1 {
+  background-color: black;
+  /* background-image: url(/media/cars-1.png); */
+}
+
+.c2, .c3 {
+  background-color: grey;
+  /* background-image: url(/media/road.png); */
+}
+
+.l1, .l2, .l3 {
+  background: brown;
+  /* background-image: url(/media/log.png); */
+}
+
+.l4, .l5 {
+  background-color: aquamarine;
+}
+
+.frog{
+  background-color: green;
+  /* background-image: url(/media/frog-classic-2.png); */
+}
+
+.froggie {
+  background-image: url(/media/frog-classic-2.png);
+}
